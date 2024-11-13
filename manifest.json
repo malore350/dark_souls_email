@@ -1,0 +1,16 @@
+{
+      "manifest_version": 3,
+      "name": "YOU SENT EMAIL",
+      "version": "1.0",
+      "description": "Display Dark Souls style message when sending email in Gmail",
+      "permissions": [
+        "activeTab"
+      ],
+      "content_scripts": [
+        {
+          "matches": ["*://mail.google.com/*"],
+          "css": ["styles.css"],
+          "js": ["content.js"]
+        }
+      ]
+    }
